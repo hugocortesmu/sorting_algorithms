@@ -8,7 +8,7 @@ void quickSort(int *array, size_t size)
 {
 	if (array == NULL || size <= 1)
 		return;
-	sort_alg(array, 0, size - 1, size);
+	sortAlg(array, 0, size - 1, size);
 }
 
 /**
@@ -24,7 +24,7 @@ void sortAlg(int *arr, int left, int right, size_t size)
 
 	if (left < right)
 	{
-		pivote = split(arr, left, right, size);
+		pivote = _split(arr, left, right, size);
 		sortAlg(arr, left, pivote - 1, size);
 		sortAlg(arr, pivote + 1, right, size);
 	}
