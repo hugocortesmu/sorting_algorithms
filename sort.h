@@ -18,14 +18,9 @@ typedef struct listint_s
 
 /*Prototypes*/
 void bubble_sort(int *array, size_t size);
+void insertion_sort_list(listint_t **list);
 void print_array(const int *array, size_t size);
 void selection_sort(int *array, size_t size);
 void quickSort(int *array, size_t size);
-int partition(int *arr, int low, int high, size_t size);
-void sortAlg(int *arr, int left, int right, size_t size);
-int _split(int *arr, int left, int right, size_t size);
-
-void _swap(listint_t **head, listint_t *node1, listint_t *node2);
-void _insertion_sort_list(listint_t **list);
 
 #endif
