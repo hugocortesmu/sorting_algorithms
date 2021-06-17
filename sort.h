@@ -25,4 +25,7 @@ int partition(int *arr, int low, int high, size_t size);
 void sortAlg(int *arr, int left, int right, size_t size);
 int _split(int *arr, int left, int right, size_t size);
 
+void _swap(listint_t **head, listint_t *node1, listint_t *node2);
+void _insertion_sort_list(listint_t **list);
+
 #endif
